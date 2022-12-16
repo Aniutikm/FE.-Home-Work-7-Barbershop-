@@ -1,0 +1,281 @@
+@import url("./animation.css");
+:root{
+   --white: #FFFCFC;
+   --black: black;
+
+}
+body{
+    font-family: Rosario, sans-serif;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    width: 100%;
+    height: 12vh;
+    background-color: var(--black);
+    justify-content: space-between;
+    align-items: center;
+}
+header>img{
+   width: 13%;
+}
+header ul{
+    display: flex;
+    list-style: none;
+    font-weight: 700;
+    font-style: italic;
+    font-size: 36px;
+    color: var(--white);
+    line-height: 43px;
+}
+.nav-menu{
+    color: var(--white);
+    text-decoration: unset;
+    margin-right: 20px;
+    margin-left: 20px;
+}
+.screen{
+    height: 100%;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.box{
+    display: flex;
+    height: 88vh;
+    justify-content: space-around;
+}
+.left-one, .right-one{
+    width: 19%;
+    align-self: center;
+}
+.left-one{
+    transform: translateX(-100vh);
+    animation: img-show-left 2s linear forwards;
+}
+.right-one{
+    transform: translateX(100vh);
+    animation: img-show-right 2s linear forwards;
+}
+.left-two{
+transform: translateX(-100vh);
+animation: img-show-left 1s linear forwards;
+}
+.right-two{
+    transform: translateX(100vh);
+    animation: img-show-right 1s linear forwards;
+}
+.left-two, .right-two{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 24%;
+    margin: 6% 0;
+    
+}
+.left-two img, .left-one img, .right-one img, .right-two img{
+   width: 100%;
+}
+.left-two>div:last-of-type, .right-two>div:last-of-type{
+    margin-top: 4%;
+}
+
+
+/*screen2*/
+
+
+.left-box{
+    margin-top: 2%;
+    margin-left: 2%;
+    width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    position: relative;
+}
+.left-box>div{
+    width: 50%;
+    height: 50%;
+    position: absolute;
+}
+.left-box img{
+    width: 75%;
+}
+.left-box div:last-of-type{
+    font-size: 48px;
+    font-weight: 700;
+    font-style: italic;
+    line-height: 58px;
+    text-align: center;
+}
+.right-box{
+    width: 50%;
+    height: 100%;
+}
+.right-box>img{
+    width: 100%;
+    
+}
+.item1{
+    animation: item1 5s linear infinite;
+    top: 0;
+    left: 0;
+}
+.item2{
+    top: 0;
+    left: 50%;
+    animation: item2 5s linear infinite;
+}
+.item3{
+    top: 50%;
+    left: 50%;
+    animation: item3 5s linear infinite;
+}
+.item4{
+    top: 50%;
+    left: 0;
+    animation: item4 5s linear infinite;
+}
+
+/*screen3*/
+.teams-box, .contact-box{
+    height: 88vh;
+}
+.title{
+    font-size: 4rem;
+    font-weight: 700;
+    text-align: center;
+    line-height: 116px;
+   
+}
+.teams{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 4%;
+}
+.team-card{
+    position: relative;
+    width: 20%;
+    height: 62%;
+}
+.team-card>img{
+    width: 100%;
+    height: 100%;
+}
+.teams:hover > div{
+    filter: brightness(.5);
+}
+.teams > div:hover{
+    filter: none;
+}
+.name{
+    font-weight: 400;
+    position: absolute;
+    background: rgba(163, 83, 10, 0.7);
+    width: 100%;
+    overflow: hidden;
+    font-size: 48px;
+    color: #FFFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 0%;
+    border-radius: 0 0 40px 40px;
+
+    transform: translateY(50vh);
+}
+.teams>div:hover .name{
+    height: 20%;
+    transform: translateY(0);
+}
+
+/*screen4*/
+
+.left-side{
+   width: 48%;
+   margin-left: 8%;
+}
+h2{
+    font-weight: 700;
+    font-style: italic;
+    font-size: 3rem;
+    
+    text-align: center;
+}
+.box-content{
+    display: flex;
+    justify-content: space-between;
+}
+.form{
+    width: 100%;
+    background: #E5E5E5;
+    padding: 3% 3%;
+    box-sizing: border-box;
+}
+
+.form div{
+    display: flex;
+    justify-content: space-between;
+}
+
+.message{
+    margin-top: 3%;
+    width: 100%;
+    resize: none;
+
+}
+.form input , textarea{
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: rgba(0, 0, 0, 0.5);
+    border: none;
+    padding: 5px;
+}
+
+input {
+    width: 45%;
+    
+}
+
+.box-content > div:last-of-type{
+    width: 32%;
+    margin-top: 3%;
+    margin-right: 8%;
+   
+}
+iframe{
+    width: 100%;
+}
+footer{
+    display: flex;
+   justify-content: space-between;
+   margin: 0 8% 0 8%;
+}
+.column1, .column2, .column3{
+    font-size: 25px;
+    font-weight: 600;
+    font-style: italic;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+
+}
+.column1, .column3{
+    margin-top: 3%;
+}
+.column1 span{
+    font-weight: 700;
+}
+.column2-title{
+    font-weight: 700;
+    font-size: 36px;
+}
+a{
+    text-decoration: none;
+    color: var(--black);
+}
+
+
+
+
