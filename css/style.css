@@ -283,7 +283,16 @@ a{
     text-decoration: none;
     color: var(--black);
 }
+.box, .box-services, .teams-box{
+    overflow: hidden;
+}
 
+/*@media (max-width: 1620px){
+    body{
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}*/
 
 
 
