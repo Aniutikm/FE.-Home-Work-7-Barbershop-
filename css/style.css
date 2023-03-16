@@ -17,7 +17,8 @@ header {
     background-color: var(--black);
     justify-content: space-between;
     align-items: center;
-    position: fixed;
+    position: sticky;
+    top: 0;
     z-index: 5;
 }
 
@@ -34,6 +35,7 @@ header ul {
     font-size: 36px;
     color: var(--white);
     line-height: 43px;
+   
 }
 
 .nav-menu {
@@ -44,15 +46,14 @@ header ul {
 }
 
 .screen {
-    height: 100%;
+    
     box-sizing: border-box;
 
 }
 
 .box {
     display: flex;
-    height: 88vh;
-    padding-top: 7%;
+    height: 100%;
     justify-content: space-around;
 }
 
