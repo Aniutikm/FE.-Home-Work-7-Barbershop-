@@ -28,13 +28,15 @@ header>img {
 }
 
 header ul {
+    width: 70%;
     display: flex;
     list-style: none;
     font-weight: 700;
     font-style: italic;
-    font-size: 36px;
+    font-size: 30px;
     color: var(--white);
     line-height: 43px;
+    justify-content: flex-end;
    
 }
 
@@ -351,9 +353,18 @@ a {
         padding: 0 10%;
         margin: 0 auto;
     }
+
 }
 @media screen and (min-width: 769px) and (max-width: 992px){
 
+    header ul {
+        width: 40%;
+    }
+    .nav-menu {
+        font-size: 25px;
+        margin-right: 10px;
+        margin-left: 10px;
+    }
     /* Gallery */
     .box{
         flex-wrap: wrap;
@@ -468,6 +479,14 @@ a {
 @media screen and (max-width: 768px) {
     .screen {
         height: fit-content;
+    }
+    header ul {
+        width: 40%;
+    }
+    .nav-menu {
+        font-size: 20px;
+        margin-right: 5px;
+        margin-left: 5px;
     }
 
     .box {
